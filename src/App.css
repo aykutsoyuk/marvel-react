@@ -3,6 +3,8 @@
   src: url(./Assets/Fonts/Adventure.otf);
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -11,6 +13,7 @@
 
 .app {
   max-width: 100vw;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .header {
@@ -22,11 +25,17 @@
 
 .components {
   display: flex;
-  flex-direction: row;
 }
 
 .container__characters {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    justify-content: center;
+  }
 }

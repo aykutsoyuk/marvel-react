@@ -5,9 +5,18 @@ export default {
         height: "180px",
         margin: "10px",
         cursor: "pointer",
-        // "@media only screen and (max-width: 760px)": {
-        //     
-        //   },
+        "@media only screen and (max-width: 1140px)": {
+          width: "450px",
+          height: "220px",
+          },
+        "@media only screen and (max-width: 940px)": {
+          width: "90vw",
+          height: "180px",
+          },
+        "@media only screen and (max-width: 500px)": {
+          flexDirection: "column",
+          height: "325px"
+        },
       },
       card_details: {
         display: 'flex',
