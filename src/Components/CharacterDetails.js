@@ -1,7 +1,7 @@
 import React from "react";
 import { withStyles } from "@material-ui/core/styles";
 import {
-  SwipeableDrawer,
+  Drawer,
   Typography,
   Link,
   List,
@@ -17,7 +17,7 @@ const CharacterDetails = (props) => {
     <div>
       {character && (
         <React.Fragment key={ window.innerWidth > 550 ? "right" : "bottom"}>
-          <SwipeableDrawer
+          <Drawer
             classes={{ paper: classes.drawer__paper }}
             anchor={ window.innerWidth > 550 ? "right" : "bottom"}
             open={drawer}
@@ -114,7 +114,7 @@ const CharacterDetails = (props) => {
                 </List>
               </div>
             </div>
-          </SwipeableDrawer>
+          </Drawer>
         </React.Fragment>
         // comics events series stories.items
       )}

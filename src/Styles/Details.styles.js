@@ -3,7 +3,7 @@ export default {
         backgroundColor: "black",
         overflowY: "unset",
         overflowX: "hidden",
-        height: "-webkit-fill-available"
+        minHeight: "-webkit-fill-available"
     },
 
 container__details: {
