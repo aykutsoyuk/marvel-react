@@ -7,8 +7,6 @@ export default {
     },
 
 container__details: {
-    display: "flex",
-    flexDirection: "column",
     width: "550px",
     height: "100%",
     backgroundColor: "black",

@@ -40,6 +40,7 @@ const CharacterDetails = (props) => {
                     fontFamily: "comicFont",
                     fontSize: "40px",
                     textShadow: "1px 1px #ff0000",
+                    padding: "0px 32px",
                   }}
                 >
                   {character.name}
