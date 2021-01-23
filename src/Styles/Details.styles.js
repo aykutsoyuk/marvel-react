@@ -1,12 +1,12 @@
 export default {
-    drawer__paper: {
-        backgroundColor: "black",
-        overflowY: "unset",
-        overflowX: "hidden",
-        minHeight: "-webkit-fill-available"
-    },
+  drawer__paper: {
+    backgroundColor: "black",
+    overflowY: "unset",
+    overflowX: "hidden",
+    minHeight: "-webkit-fill-available",
+  },
 
-container__details: {
+  container__details: {
     width: "550px",
     height: "100%",
     backgroundColor: "black",
@@ -21,14 +21,15 @@ container__details: {
     opacity: 0.1,
     minHeight: "100%",
     backgroundRepeat: "repeat-y",
+    display: "none",
   },
 
   details__media: {
-      display: "flex",
-      alignItems: "center",
-      flexDirection: "column",
-      marginTop: "20px",
-      textAlign: "center",
+    display: "flex",
+    alignItems: "center",
+    flexDirection: "column",
+    marginTop: "20px",
+    textAlign: "center",
   },
 
   details__img: {
@@ -36,7 +37,7 @@ container__details: {
     height: 160,
     border: "2px solid white",
     borderRadius: "50%",
-    marginTop: "20px"
+    marginTop: "20px",
   },
 
   details__description: {
@@ -50,8 +51,7 @@ container__details: {
 
   links__root: {
     cursor: "pointer",
-    zIndex: 10,
-    textAlign: "center"
+    textAlign: "center",
   },
 
   links: {
@@ -63,17 +63,17 @@ container__details: {
   },
 
   events__root: {
-    width: '100%',
-    position: 'relative',
-    overflow: 'auto',
+    width: "100%",
+    position: "relative",
+    overflow: "auto",
     maxHeight: 300,
-    marginTop: "20px"
+    marginTop: "20px",
   },
   list__section: {
-    backgroundColor: 'inherit',
+    backgroundColor: "inherit",
   },
   list__ul: {
-    backgroundColor: 'inherit',
+    backgroundColor: "inherit",
     padding: 0,
   },
   list__header: {
@@ -87,7 +87,7 @@ container__details: {
   },
 
   list__item__root: {
-    padding: "0px 32px"
+    padding: "0px 32px",
   },
 
   item__root: {
@@ -98,7 +98,5 @@ container__details: {
     fontSize: "16px",
     fontFamily: "Montserrat, sans-serif",
     color: "white",
-  }
-
-
-}
+  },
+};

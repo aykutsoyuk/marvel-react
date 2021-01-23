@@ -63,7 +63,12 @@ const App = (props) => {
         </div>
         <div className={classes.header__search}>
           <TextField
-            InputProps={{ classes: {root : classes.input__root, input: classes.input__field} }}
+            InputProps={{
+              classes: {
+                root: classes.input__root,
+                input: classes.input__field,
+              },
+            }}
             fullWidth
             placeholder="Search for any character"
             variant="outlined"
@@ -72,11 +77,25 @@ const App = (props) => {
         </div>
       </div>
       <div className="components">
-       {characters ? <Characters characters={characters} selectedCharacter={setSelectedCharacter} setDrawer={setDrawer}/> : <span>No matches found</span>}
-       {selectedCharacter && <CharacterDetails character={selectedCharacter} drawer={drawer} setDrawer={setDrawer}/>}
-       </div>
+        {characters ? (
+          <Characters
+            characters={characters}
+            selectedCharacter={setSelectedCharacter}
+            setDrawer={setDrawer}
+          />
+        ) : (
+          <span>No matches found</span>
+        )}
+        {selectedCharacter && (
+          <CharacterDetails
+            character={selectedCharacter}
+            drawer={drawer}
+            setDrawer={setDrawer}
+          />
+        )}
+      </div>
     </div>
   );
-}
+};
 
 export default withStyles(styles)(App);

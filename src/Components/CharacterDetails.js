@@ -16,10 +16,10 @@ const CharacterDetails = (props) => {
   return (
     <div>
       {character && (
-        <React.Fragment key={ window.innerWidth > 550 ? "right" : "bottom"}>
+        <React.Fragment key={window.innerWidth > 550 ? "right" : "bottom"}>
           <Drawer
             classes={{ paper: classes.drawer__paper }}
-            anchor={ window.innerWidth > 550 ? "right" : "bottom"}
+            anchor={window.innerWidth > 550 ? "right" : "bottom"}
             open={drawer}
             onClose={() => setDrawer(false)}
           >
@@ -105,7 +105,13 @@ const CharacterDetails = (props) => {
                         </ListSubheader>
                         {section.items.map((item) => (
                           <ListItem className={classes.list__item__root}>
-                            <ListItemText classes={{ root: classes.item__root, primary: classes.item__primary }} primary={item.name} />
+                            <ListItemText
+                              classes={{
+                                root: classes.item__root,
+                                primary: classes.item__primary,
+                              }}
+                              primary={item.name}
+                            />
                           </ListItem>
                         ))}
                       </ul>
